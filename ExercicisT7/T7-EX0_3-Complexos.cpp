@@ -13,26 +13,26 @@ struct Complex {
 Complex suma (Complex num1, Complex num2) {
 // Pre: cert; 
 //Post: retorna el complex num1+num2
-    Complex resultat;
-    resultat.r=num1.r+num2.r;
-    resultat.i=num1.i+num2.i;
+	Complex resultat;
+	resultat.r=num1.r+num2.r;
+	resultat.i=num1.i+num2.i;
 	return resultat;
 }
 
 Complex producte (Complex num1, Complex num2) {
 // Pre: cert; 
-//Post: retorna el complex num1·num2
-    Complex resultat;
-    resultat.r=num1.r*num2.r- num1.i*num2.i;
-    resultat.i=num1.r*num2.i+ num1.i*num2.r;
+//Post: retorna el complex num1Â·num2
+	Complex resultat;
+	resultat.r=num1.r*num2.r- num1.i*num2.i;
+	resultat.i=num1.r*num2.i+ num1.i*num2.r;
 	return resultat;
 }
 
 Complex llegir_complex () {
 // Pre: cert; Post: retorna el complex llegit de teclat
-    Complex num;
-    cout<<"Part real: "; cin>>num.r;
-    cout<<"Part imaginaria: "; cin>>num.i;
+	Complex num;
+	cout<<"Part real: "; cin>>num.r;
+	cout<<"Part imaginaria: "; cin>>num.i;
 	return num;
 }
 
@@ -48,7 +48,7 @@ int main() {
 	// Entrada
 	Complex complex1 = llegir_complex();
 	Complex complex2 = llegir_complex();
-	// Càlcul
+	// CÃ lcul
 	Complex sum = suma(complex1, complex2); 
 	Complex prod = producte(complex1, complex2); 
 	// Sortida
