@@ -1,12 +1,12 @@
-/* Determinar si un nombre és primer*/
+/* Determinar si un nombre Ã©s primer*/
 // Entrada: un nombre >=2 (nombre)
-// Sortida: diu si és o no un nombre primer
+// Sortida: diu si Ã©s o no un nombre primer
 #include<iostream>
 using namespace std;
 
 bool es_primer(unsigned n) {
 //Pre: n>=2
-//Post: retorna certsi n no técapdivisor diferentd'1 i d'ellmateix, falsaltrament
+//Post: retorna certsi n no tÃ©capdivisor diferentd'1 i d'ellmateix, falsaltrament
 	unsigned divisor=2;
 	while(n%divisor!=0 and divisor*divisor<n)
 		divisor++;
@@ -21,8 +21,8 @@ int main ()
 	unsigned nombre;
 	cout<<"Introdueix un enter >=2: ";
 	cin>>nombre;
-	if(es_primer(nombre)) cout<<"És primer"<<endl;
-	else cout<<"No és primer"<<endl;
+	if(es_primer(nombre)) cout<<"Ã‰s primer"<<endl;
+	else cout<<"No Ã©s primer"<<endl;
 	
 	return 0;
 }
