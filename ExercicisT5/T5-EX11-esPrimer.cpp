@@ -1,6 +1,7 @@
 /* Determinar si un nombre és primer*/
 // Entrada: un nombre >=2 (nombre)
 // Sortida: diu si és o no un nombre primer
+
 #include<iostream>
 using namespace std;
 
