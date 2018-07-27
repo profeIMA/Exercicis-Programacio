@@ -6,8 +6,8 @@
 using namespace std;
 
 struct Complex {
-    double r; 
-    double i;
+	double r; 
+	double i;
 }; 
 
 Complex suma (Complex num1, Complex num2) {
