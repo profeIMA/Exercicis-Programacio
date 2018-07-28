@@ -17,7 +17,7 @@ bool existeix(const Vector_enter vec, unsigned n, unsigned x) {
 
 void unio_vectors_desordenats(const Vector_enter vec1, const Vector_enter vec2, unsigned n1, unsigned n2, Vector_enter vec_unio, unsigned &n) {
 //Pre: 0<=n1+n2<=N_MAX i vec1[0..n1-1] i vec2[0..n2-1] sense repetits
-//Post: 0<=n<=n1+n2 i vec_inio[0..n-1] és la unió de vec1[0..n1-1] i vec2[0..n2-1]
+//Post: 0<=n<=n1+n2 i vec_inio[0..n-1] Ã©s la uniÃ³ de vec1[0..n1-1] i vec2[0..n2-1]
 	for (unsigned i1 = 0; i1<n1; i1++) { vec_unio[i1] = vec1[i1]; }
 	n = n1;
 	for (unsigned i2 = 0; i2<n2; i2++) {
@@ -28,7 +28,7 @@ void unio_vectors_desordenats(const Vector_enter vec1, const Vector_enter vec2, 
 
 void llegir_vector_enter(Vector_enter vec_enter, unsigned n) {
 //Pre: 0<=n<=N_MAX
-//Post: vec_enter[0..n-1] conté successivament els enters entrats
+//Post: vec_enter[0..n-1] contÃ© successivament els enters entrats
 	for (unsigned i = 0; i<n; i++) cin >> vec_enter[i];
 }
 

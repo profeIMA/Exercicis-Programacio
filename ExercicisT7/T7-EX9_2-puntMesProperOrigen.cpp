@@ -19,14 +19,14 @@ struct Taula_punts {
 
 double dist(Punt p, Punt q) {
 	//Pre: cert
-	//Post: retorna la dist‡ncia Euclidea entre els punts p i q
+	//Post: retorna la dist√†ncia Euclidea entre els punts p i q
 	double dif_x = p.x - q.x, dif_y = p.y - q.y;
 	return sqrt(dif_x*dif_x + dif_y * dif_y);
 }
 
 Punt mes_proper_a_origen(Taula_punts punts) {
 //Pre: 0<=punts.n<=N_MAX
-//Post: retorna el punt de punts.vect[0..punts.n-1] mÈs proper a p
+//Post: retorna el punt de punts.vect[0..punts.n-1] m√©s proper a p
 	Punt p;
 	p.x = 0; p.y = 0;
 	Punt mes_proper=punts.vect[0];
@@ -41,12 +41,14 @@ Punt mes_proper_a_origen(Taula_punts punts) {
 
 void llegir_vector_punts(Taula_punts & punts) {
 //Pre: 0<=punts.n<=N_MAX
-//Post: punts.vect[0..punts.n-1] contÈ successivament els Punts entrats
+//Post: punts.vect[0..punts.n-1] cont√© successivament els Punts entrats
 	for(unsigned i = 0; i<punts.n; i++)
 		cin >> punts.vect[i].x >> punts.vect[i].y;
 }
 
 void escriure_taula_punts(Taula_punts punts) {
+//Pre: 0<=punts.n<=N_MAX
+//Post: s'han mostrat els punts.n punts de punts.vect
 	for (int i = 0; i < punts.n; i++) {
 		cout << "(" << punts.vect[i].x << ", " << punts.vect[i].y<< "), ";
 	}
@@ -58,6 +60,6 @@ int main() {
 	llegir_vector_punts(punts);
 	Punt proper_origen = mes_proper_a_origen(punts);
 	escriure_taula_punts(punts);
-	cout << "El punt mÈs proper a l'origen de coordenades Ès: ("<< proper_origen.x<<", "<<proper_origen.y<<")";
+	cout << "El punt mÔøΩs proper a l'origen de coordenades ÔøΩs: ("<< proper_origen.x<<", "<<proper_origen.y<<")";
 	return 0;
 }
