@@ -1,6 +1,10 @@
 // Entrada: llegeix (preu_inicial i diners) dos nombres reals i descompte un nombre natural
 // Sortida: mostra el preu final un cop aplicat el descompte a preu_inicial i el canvi que cal tornar d'acord amb el preu final i els diners lliurats
 
+#include<iostream>
+
+using namespace std;
+
 int main() {
     cout<<"Preu: ";
     double preu_inicial;
