@@ -2,7 +2,6 @@
 // Sortida: posició d'inserció de x a vec.
 
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
