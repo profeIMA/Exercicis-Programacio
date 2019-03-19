@@ -1,0 +1,12 @@
+r		//Caràcter 'r': la informació sota aquesta línia representa un rectangle, fins al següent caràcter
+250 200		//Coordenades X i Y de la cantonada superior esquerra del rectangle
+350 100		//Coordenades X i Y de la cantonada inferior dreta del rectangle, fi de les dades del rectangle
+c		//Caràcter 'c': la informació sota aquesta línia representa un cercle, fins al següent caràcter
+250 300		//Coordenades X i Y del centre del cercle
+50		//Radi del cercle, fi de les dades del cercle.
+r		//Caràcter 'r': la informació sota aquesta línia representa un Rectangle, fins al següent caràcter
+150 150		//Coordenades X i Y del primer punt del rectangle
+300 110		//Coordenades X i Y del segon punt del rectangle, fi de les dades del rectangle
+l		//Caràcter 'l': la informació sota aquesta línia representa una línia, fins al següent caràcter
+100 100		//Coordenades X i Y del primer punt de la línia
+500 400		//Coordenades X i Y del segon punt de la línia, fi de les dades de la línia i fi del fitxer
